@@ -43,12 +43,11 @@ input {
 }
 
 input[type="search"] {
-  border: solid 1px black;
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
-  width: 805px;
-  height: 41px;
-
+  width: 790px;
+  height: 35px;
+  border: 0.25px solid #000000;
   background: var(--background-color);
   border-radius: 50px;
 }
@@ -68,15 +67,15 @@ li {
 }
 
 .col-1 .profile-image {
-  width: 102px;
-  height: 102px;
+  width: 90px;
+  height: 90px;
   border: 1px solid #000000;
   border-radius: 100px;
 }
 
 .col-2 .profile-image {
-  width: 64px;
-  height: 64px;
+  width: 50px;
+  height: 50px;
   border: 1px solid #000000;
   border-radius: 100px;
 }
@@ -90,7 +89,7 @@ li {
 .header {
   grid-column: 2 / 3;
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: 2fr 1fr;
   background: var(white);
   border-bottom: 0.25px solid #000000;
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
@@ -98,6 +97,49 @@ li {
   padding-left: 100px;
 }
 
+.header .col-1 {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 18px;
+}
+
+.header .col-2 {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  gap: 18px;
+  height: 160px;
+  justify-content: center;
+  padding: 0px;
+gap: 41px;
+}
+
+.col-2 .row-1 {
+  padding: 0;
+  gap: 26px;
+}
+
+.col-2 .row-2 {
+  display: flex;
+align-items: flex-start;
+padding: 0px;
+}
+
+.row-2 button {
+width: 105px;
+height: 40px;
+background: #616A87;
+border-radius: 15px;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+color: #FFFFFF;
+align-items: center;
+justify-content: center;
+border: none;
+margin-right: 20px;
+}
 .sidebar {
   grid-row: 1 / 3;
   display: flex;
@@ -106,8 +148,8 @@ li {
   padding: 50px;
   padding-top: 38px;
   color: #fff;
-  font-weight: 600;
-  font-size: 25px;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .side-bar-list-1 div, .side-bar-list-2 div {
@@ -115,6 +157,7 @@ li {
  padding: 0;
  gap: 25px;
 }
+
 
 .dashboard {
   margin-bottom: 50px;
@@ -128,10 +171,30 @@ li {
   margin-top: 47px;
 }
 
-
-
 .col-1 .row-2, .col-2 .row-1 {
   display: flex;
+  align-items: center;
+}
+
+.col-1 .row-2 {
+  display: flex;
+  padding: 0;
+  gap: 25px;
+}
+
+.greet {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.user {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.col-2 .row-1 p {
+  font-weight: 400;
+font-size: 20px;
 }
 
 .projects {
@@ -144,7 +207,7 @@ li {
 
 .projects div {
   border-left: 15px solid var(--theme-color);
-  background: #f1f1f1;
+  background: var(--white);
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
 }
@@ -167,5 +230,61 @@ ul > div {
   display: flex;
 }
 
-.main-col-2 {
+.announcements {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+width: 392px;
+height: max-content;
+padding: 50px;
+gap: 30px;
+margin-bottom: 20px;
+}
+
+.announcements p {
+  font-weight: 400;
+font-size: 15px;
+}
+
+.announcements h4 {
+  font-style: normal;
+font-weight: 600;
+font-size: 15px;
+}
+
+.trending {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+width: 392px;
+height: max-content;
+padding: 50px;
+gap: 30px;
+margin-bottom: 20px;
+}
+
+.trending .profile-image {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000000;
+  border-radius: 100px;
+}
+
+.trending > div {
+  display: flex;
+  padding: 0;
+  gap: 28px;
+}
+
+.descrip {
+  color: #403D3D;
+}
+
+.name {
+  font-weight: 500;
+font-size: 20px;
 }
