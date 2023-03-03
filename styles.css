@@ -21,6 +21,9 @@ body {
 h4 {
   font-size: 30px;
   margin-bottom: 35px;
+  font-style: normal;
+  font-weight: 600;
+
 }
 input {
   margin: 0;
@@ -45,7 +48,7 @@ input {
 input[type="search"] {
   -webkit-appearance: textfield;
   -webkit-box-sizing: content-box;
-  width: 790px;
+  width: 600px;
   height: 35px;
   border: 0.25px solid #000000;
   background: var(--background-color);
@@ -220,11 +223,19 @@ font-size: 20px;
   grid-auto-rows: 270px;
 }
 
-.projects div {
-  border-left: 15px solid var(--theme-color);
+.projects > div {
   background: var(--white);
   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
   border-radius: 12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  justify-content: space-between;
+}
+
+.labels-and-icons {
+  position: absolute;
 }
 
 ul > div {
@@ -253,7 +264,7 @@ box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
 width: 392px;
 height: max-content;
-padding: 50px;
+padding: 35px;
 gap: 30px;
 margin-bottom: 20px;
 }
@@ -263,11 +274,7 @@ margin-bottom: 20px;
 font-size: 15px;
 }
 
-.announcements h4 {
-  font-style: normal;
-font-weight: 600;
-font-size: 15px;
-}
+
 
 .trending {
   display: flex;
@@ -277,7 +284,7 @@ box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.25);
 border-radius: 10px;
 width: 392px;
 height: max-content;
-padding: 50px;
+padding: 35px;
 gap: 30px;
 margin-bottom: 20px;
 }
@@ -302,4 +309,24 @@ margin-bottom: 20px;
 .name {
   font-weight: 500;
 font-size: 20px;
+}
+
+.label {
+  font-weight: 600;
+font-size: 20px;
+}
+
+.github-icons {
+  justify-self: flex-end;
+  align-self: flex-end;
+  display: flex;
+  gap: 50px;
+}
+
+.announcements h3 {
+  margin-bottom: 9px;
+}
+
+.proj h3 {
+margin-bottom: 9px;
 }
