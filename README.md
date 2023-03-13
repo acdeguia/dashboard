@@ -8,4 +8,4 @@
 
 
 ### Objective
-1. Create the Admin dashboard layout using CSS grid.
+1. Create an Admin dashboard layout using CSS grid.
